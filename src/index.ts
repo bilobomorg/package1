@@ -1,8 +1,3 @@
-import React from 'react'
-
-
-const Package1=()=>{
-    return <div>package1</div>
-}
+import Package1 from "./Package1";
 
 export default Package1
