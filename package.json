@@ -1,9 +1,9 @@
 {
-  "name": "@bilobom/package1",
+  "name": "@bilobomorg/package1",
   "version": "1.0.4",
   "description": "richtext editor",
   "author": "bilobom",
-  "repository": "git://github.com:bilobom/package1.git",
+  "repository": "git://github.com:bilobomorg/package1.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
