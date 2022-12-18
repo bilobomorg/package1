@@ -1,10 +1,11 @@
 # this file is derived from the following docs: 
 # https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: Publish @bilobom/package1 to GitHub Packages
+name: Publish @bilobomorg/package1 to GitHub Packages
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest 
@@ -19,7 +20,7 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
-          scope: '@bilobom'
+          scope: '@bilobomorg'
       - run: yarn install
       - run: yarn publish
         env:
